@@ -1,0 +1,40 @@
+state,city,type,price,quality
+Maharashtra,Mumbai,1BHK,50000,Good
+Maharashtra,Mumbai,2BHK,70000,Average
+Maharashtra,Mumbai,3BHK,90000,Good
+Karnataka,Bangalore,1BHK,45000,Good
+Karnataka,Bangalore,2BHK,65000,Average
+Karnataka,Bangalore,3BHK,85000,Good
+Delhi,Delhi,1BHK,55000,Good
+Delhi,Delhi,2BHK,75000,Average
+Delhi,Delhi,3BHK,95000,Excellent
+West Bengal,Kolkata,1BHK,40000,Average
+West Bengal,Kolkata,2BHK,60000,Good
+West Bengal,Kolkata,3BHK,80000,Average
+Tamil Nadu,Chennai,1BHK,43000,Good
+Tamil Nadu,Chennai,2BHK,63000,Good
+Tamil Nadu,Chennai,3BHK,83000,Excellent
+Gujarat,Ahmedabad,1BHK,47000,Average
+Gujarat,Ahmedabad,2BHK,67000,Good
+Gujarat,Ahmedabad,3BHK,87000,Good
+Rajasthan,Jaipur,1BHK,42000,Average
+Rajasthan,Jaipur,2BHK,62000,Good
+Rajasthan,Jaipur,3BHK,82000,Average
+Punjab,Chandigarh,1BHK,48000,Good
+Punjab,Chandigarh,2BHK,68000,Good
+Punjab,Chandigarh,3BHK,88000,Excellent
+Uttar Pradesh,Noida,1BHK,50000,Average
+Uttar Pradesh,Noida,2BHK,70000,Good
+Uttar Pradesh,Noida,3BHK,90000,Good
+Haryana,Faridabad,1BHK,49000,Good
+Haryana,Faridabad,2BHK,69000,Good
+Haryana,Faridabad,3BHK,89000,Average
+Madhya Pradesh,Bhopal,1BHK,46000,Average
+Madhya Pradesh,Bhopal,2BHK,66000,Good
+Madhya Pradesh,Bhopal,3BHK,86000,Good
+Assam,Guwahti,1BHK,41000,Good
+Assam,Guwahti,2BHK,61000,Average
+Assam,Guwahti,3BHK,81000,Average
+Kerala,Kochi,1BHK,45000,Good
+Kerala,Kochi,2BHK,65000,Good
+Kerala,Kochi,3BHK,85000,Excellent

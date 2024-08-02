@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        body {            
+            font-family: Arial, sans-serif;
+            background-color: #03071292;
+            margin: 5%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .base{
+            height: 70vh;
+        }
+        footer{
+            height: 5vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 25px;
+            border-radius: 10px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button{
+            background-color: rgb(52, 52, 52);
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 14px 16px;
+            transition: all 0.4s;
+        }
+        button:hover{
+            transform: scale(0.91);
+        }
+
+    @media (max-width:500px ) {
+        body{
+            transform: scale(0.91);
+        }
+        select, button {
+        margin: 5px 0px;
+        padding: 7px;
+        font-size: 14px;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+   <div class="base">
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <label for="state">Select State:</label>
+        <select id="state" onchange="updateCities()">
+            <option value="" disabled selected>Select a state</option>
+
+        </select>
+        <br>
+        <label for="city">Select City:</label>
+        <select id="city" disabled onchange="enableBHKType()">
+            <option value="" disabled selected>Select a city</option>
+
+        </select>
+        <br>
+        <label for="bhkType">Select BHK Type:</label>
+        <select id="bhkType" disabled>
+            <option value="" disabled selected>Select BHK type</option>
+            <option value="1BHK">1BHK</option>
+            <option value="2BHK">2BHK</option>
+            <option value="3BHK">3BHK</option>
+        </select>
+        <br>
+        <button onclick="predictPrice()">Get Price Prediction</button>
+        <div id="result"></div>
+    </div>
+   </div>
+
+    <footer>
+        Developed by :  Utkarsh Shahare
+    </footer>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "61d7174a-c104-4fed-985a-7a7afb57370e", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "d09dd89e-d436-402b-a160-3f28375e198a", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
